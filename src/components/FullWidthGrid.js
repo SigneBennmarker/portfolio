@@ -34,7 +34,7 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}>My Work</Paper>
         </Grid>
         <Grid item xs={6} sm={2}>
-          <Paper className={classes.paper}>Contact</Paper>
+          <Paper className={classes.paper}>Cin</Paper>
         </Grid>
       </Grid>
     </div>
