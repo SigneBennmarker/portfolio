@@ -24,6 +24,8 @@ h1{
 
 h1{
     font-weight: 700;
+    color: #121211;
+    
 }
 p{
     font-weight: 400;
@@ -38,7 +40,7 @@ p{
     background-color: #FFFEFC;
     text-align: center;
 
-    padding: 35vw 0 0 0;
+    padding: 45vh 0 55vh 0;
 
 }
 
