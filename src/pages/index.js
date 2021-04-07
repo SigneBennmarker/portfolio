@@ -1,25 +1,41 @@
 import React from "react";
-//var ReactDOM = require('react-dom');
 
+import Grid from '@material-ui/core/Grid';
 
 import '../style.css';
-import Grid from '@material-ui/core/Grid';
 
 import Header from '../components/Header'; 
 import ContentsGrid from '../components/ContentsGrid';
+var ReactDOM = require('react-dom');
+
+
+// export default function Home() {
+//   return (
+//     <div className = "home">
+//       <Header className = "header">
+//       </Header>
+
+
+//       <ContentsGrid>
+//       </ContentsGrid>
+      
+//       </div>
+       
+//   )
+// }
+
+
 
 
 export default function Home() {
-  return (
-    <div className = "home">
-      <Header className = "header">
-      </Header>
 
+    return (
 
-      <ContentsGrid>
-      </ContentsGrid>
-      
-      </div>
+        <div className = "comingSoon">
+           
+        <h1>COMING SOON</h1>
        
-  )
+
+        </div>
+    )
 }

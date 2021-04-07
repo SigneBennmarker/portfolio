@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(8),
+    padding: theme.spacing(3),
     textAlign: 'center',
     color: theme.palette.text.secodary,
   },
@@ -19,7 +19,7 @@ export default function ContentsGrid() {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={0}>
         <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
               <h1>ETT CASE ELLER!?!</h1>
