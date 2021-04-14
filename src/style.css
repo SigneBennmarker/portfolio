@@ -6,30 +6,45 @@ margin-bottom: 9rem;
 
 }
 .home{
-    background-color: lightpink;
-    padding: 3rem 3rem 20rem;
+    background-color: #FCFBF9;
+    padding: 0rem 6rem 6rem 6rem;
     align-content: center;
 
 }
 
 
 .nav{
-    justify-self: right
-    ;
+    justify-self: right;
+}
+body{
+    margin: 0rem;
 }
 
 
 h1{
-    font-family: 'Public Sans', sans-serif;}
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #121211;
+    padding: 0px;
+    margin: 0rem;
 
-h1{
+}
+h2{
+    font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     color: #121211;
-    
+    font-size: 1.1rem;
+
+
 }
 p{
-    font-weight: 400;
-}
+    font-weight: 500;
+    font-family: 'Public Sans', sans-serif;
+    align-items: right;
+    color: #121211;    
+    line-height: 2rem;
+    }
 
 .ContentsGrid{
     margin: 8rem 0rem;
@@ -43,4 +58,36 @@ p{
     padding: 40vh 0 0vh 0;
 
 }
+.infoAboutMe{
+    margin-top: 25rem;
+}
 
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    padding:0rem;
+
+}
+
+li{
+    padding-top: 2rem;
+}
+nav{
+    padding: 1rem 0rem 6rem
+}
+
+.navLinks{
+    text-decoration: none;
+    vertical-align: middle;
+
+
+}
+
+h3{
+    font-weight: 500;
+    font-family: 'Public Sans', sans-serif;
+    color: #121211;    
+
+    
+}
