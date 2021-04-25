@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import InfoAboutMe from './infoAboutme';
-import ContentsGrid from './ContentsGrid';
-import ContactComp from './ContactComp'
-import MyWorkComp from './MyWorkComp'
-//import About from '../About.js';
+import InfoAboutMe from '../infoAboutme';
+import ContentsGrid from '../ContentsGrid';
+import ContactComp from '../ContactComp'
+import AboutMe from '../AboutMe'
+import WorkGrid from '../WorkGrid'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,22 +48,22 @@ export default function Nav() {
       </nav>
       <Switch>
           <Route path="/about">
-            <InfoAboutMe />
+            <AboutMe />
           </Route>
           <Route path="/contact">
             <ContactComp />
           </Route>
           <Route path="/myWork">
-            <MyWorkComp />
+            <WorkGrid />
           </Route>
           <Route path="/index">
-            <MyWorkComp />
+            <WorkGrid />
           </Route>
           <Route path="/">
-            <MyWorkComp />
+            <WorkGrid />
           </Route>
           <Route path="">
-            <ContentsGrid />
+            <WorkGrid />
           </Route>
           
           

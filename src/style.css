@@ -8,7 +8,6 @@ margin-bottom: 9rem;
 .home{
     background-color: #FCFBF9;
     padding: 0rem 6rem 6rem 6rem;
-    align-content: center;
 
 }
 
@@ -38,13 +37,14 @@ h2{
 
 
 }
-p{
+ /* p{
     font-weight: 500;
     font-family: 'Public Sans', sans-serif;
     align-items: right;
     color: #121211;    
     line-height: 2rem;
-    }
+    font-size: 1rem;
+    }  */
 
 .ContentsGrid{
     margin: 8rem 0rem;

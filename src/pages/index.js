@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import ContentsGrid from '../components/ContentsGrid';
 import InfoAboutMe from '../components/infoAboutme'
 import NavBar from "../components/Nav";
-import MyWorkComp from '../components/MyWorkComp'
+import AboutMe from '../components/AboutMe'
 
 
 

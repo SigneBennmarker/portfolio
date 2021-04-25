@@ -42,9 +42,7 @@ export default function InfoAboutMe() {
             
           
             <h1>Hi, my name is Signe </h1>
-            <p>I study at Umeå University and strive to learn more about my big intests,
-               UX- design and full stack development. When I’m not busy doing that I 
-               love to watch reality shows, work out or listen to podcasts. 
+            <p>SKVZDF wert
  
         </p>
 
