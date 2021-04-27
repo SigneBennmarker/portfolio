@@ -1,20 +1,25 @@
-import React from "react";
-// import { BrowserRouter, Route, Switch, Link, useLocation, Router } from 'react-router-dom';
+import React, { useRef, useEffect } from "react"
+ import { BrowserRouter, Route, Switch, Link, useLocation, Router } from 'react-router-dom';
 // import Grid from '@material-ui/core/Grid';
-// import '../style.css';
-import Nav from '../components/Nav'; 
+//¨
+import '../style.css';
 import ContentsGrid from '../components/ContentsGrid';
 import InfoAboutMe from '../components/infoAboutme'
 import NavBar from "../components/Nav";
 import AboutMe from '../components/AboutMe'
-
+import Contact from '../components/Contact'
+import WorkGrid from '../components/WorkGrid'
 
 
 
 
 export default function Home(){
+  const AboutRef = useRef(null)
+
   return( 
-    <div className = "home">
+
+      <BrowserRouter >
+     
               <NavBar className = "header"></NavBar>
 
               {/* {type === "" && <InfoAboutMe />} */}
@@ -25,12 +30,32 @@ export default function Home(){
                   </Route>
               </Switch> 
  */}
-
-
+<AboutMe ref={AboutRef}></AboutMe>
           
+{/* <Switch>
+          <Route path="/about">
+            <AboutMe />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/myWork">
+            <WorkGrid />
+          </Route>
+          <Route path="/index">
+            <WorkGrid />
+          </Route>
+          <Route path="/">
+            <WorkGrid />
+          </Route>
+          <Route path="">
+            <WorkGrid />
+          </Route>
+        </Switch> */}
 
-       
-    </div>
+
+        </BrowserRouter>
+  
        
   );
   

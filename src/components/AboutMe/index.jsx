@@ -10,17 +10,17 @@ import Heading1 from "../Heading1"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    padding: 3,
+    padding: theme.spacing(2),
     justify: "space-around",
     alignItems: "stretch",
   },
   pic: {
-    padding: theme.spacing(5),
+    padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secodary,
   },
   text: {
-    padding: theme.spacing(5),
+    padding: theme.spacing(2),
     textAlign: "left",
     color: theme.palette.text.secodary,
     alignItems: "center",
@@ -31,9 +31,9 @@ export default function AboutMe() {
   const classes = useStyles()
 
   return (
-    <div>
+  
       <Grid container spacing={0} className={classes.root}>
-        <Grid item xs={6} sm={6} className={classes.pic}>
+        <Grid item xs={12} sm={6} className={classes.pic}>
           <img
             src={Portrait}
             alt="Picture of me"
@@ -41,7 +41,7 @@ export default function AboutMe() {
             width="55%"
           />
         </Grid>
-        <Grid item xs={6} sm={6} className={classes.text}>
+        <Grid item xs={12} sm={6} className={classes.text}>
           <Heading1 value="Hi, my name is Signe!"></Heading1>
 
           <Paragraph
@@ -52,6 +52,6 @@ export default function AboutMe() {
           ></Paragraph>
         </Grid>
       </Grid>
-    </div>
+    
   )
 }

@@ -6,8 +6,9 @@ const useStyles = makeStyles({
         color: '#1D0E0E',
         fontWeight: 700,
         fontFamily: 'Public sans',
-        fontSize: 16,
-        paddingTop: 10
+        fontSize: 9,
+        paddingTop: 16
+        
 
     }});
   

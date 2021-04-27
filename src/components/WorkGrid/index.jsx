@@ -1,20 +1,19 @@
-import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
+import React, { useRef} from "react"
+import Grid from "@material-ui/core/Grid";
 import useStyles from "./styles"
+import { makeStyles } from "@material-ui/core/styles"
 import { spacing } from '@material-ui/system';
-import Grid from "@material-ui/core/Grid"
-
-
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom"
 import ContactComp from "../ContactComp"
 import AboutMe from "../AboutMe"
 import Case from "../Case"
+import Contact from "../Contact";
 
 export default function WorkGrid() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className= {classes.root} >
         <Grid container spacing={0} className={classes.root}>
         {/* <Grid item xs={12} sm={12} className={classes.pic}>
         <Case value ="SFD"></Case>
@@ -28,9 +27,9 @@ export default function WorkGrid() {
         
       </Grid>
 
-      
-      
 
-    </div>
+      <AboutMe></AboutMe>
+      <Contact></Contact>
+</div>
   )
 }

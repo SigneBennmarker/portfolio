@@ -1,57 +1,64 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { BrowserRouter, Route, Switch, Link} from 'react-router-dom';
-import InfoAboutMe from '../infoAboutme';
-import ContentsGrid from '../ContentsGrid';
-import ContactComp from '../ContactComp'
-import AboutMe from '../AboutMe'
-import WorkGrid from '../WorkGrid'
+import React, { useState, useEffect } from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom"
+import InfoAboutMe from "../infoAboutme"
+import ContentsGrid from "../ContentsGrid"
+import Contact from "../Contact"
+import AboutMe from "../AboutMe"
+import WorkGrid from "../WorkGrid"
+import Heading1 from "../Heading1"
+import Paragraph from "../Paragraph"
+import useStyles from "./styles"
+import { Grid } from "@material-ui/core"
+import NavLinks from "../NavLinks"
+import Hamburger from "../Hamburger"
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
+function SetNavigation() {
+  const theme = useTheme()
+  const showHam = useMediaQuery(theme.breakpoints.down("sm"))
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    padding: theme.spacing(2),
-    textAlign: 'left',
-    color: theme.palette.text.secondary,
-    alignContent: 'space-between'
-    
-  },
-  links: {
-    padding: theme.spacing(2),
-    textAlign: 'right',
-    alignContent: 'space-between'
-    
-  },
-}));
+  if (!showHam) {
+    return <NavLinks></NavLinks>
+  } else {
+    return <Hamburger></Hamburger>
+  }
+}
 
 export default function Nav() {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
-    <div className={classes.root}>  
-      
-      <BrowserRouter>
-      <nav>
-      <ul>
-      <li><Link to= '/index' className="navLinks"> <h1>
-          SIGNE BENNMARKER
-        </h1></Link></li>
-       
-   
-        
-          <li><Link to= '/about' className="navLinks"><h3>About Me</h3></Link></li>
-          <li><Link to= '/contact' className="navLinks"><h3>Contact</h3></Link></li>
-          <li><Link to = '/index' className="navLinks"><h3> My work</h3></Link></li>
+    <div>
+      <BrowserRouter className={classes.root}>
 
-        </ul>
-      </nav>
-      <Switch>
+      <Grid container spacing={0} className={classes.root}>
+       
+        <Grid item xs={8} sm={8} className={classes.text}>
+        <NavLink
+          className={classes.ul}
+          to="/index"
+          style={{ textDecoration: "none" }}
+        >
+          <Heading1 value="Signe Bennmarker"></Heading1>
+        </NavLink>
+        </Grid>
+        <Grid item xs={4} sm={4} className={classes.text}>
+        <SetNavigation> </SetNavigation>
+        </Grid>
+        
+      </Grid>
+       
+
+      
+       
+        <Switch>
           <Route path="/about">
             <AboutMe />
           </Route>
           <Route path="/contact">
-            <ContactComp />
+            <Contact />
           </Route>
           <Route path="/myWork">
             <WorkGrid />
@@ -65,16 +72,8 @@ export default function Nav() {
           <Route path="">
             <WorkGrid />
           </Route>
-          
-          
-      
-      </Switch>
+        </Switch>
       </BrowserRouter>
-       
-
-        
-     
-
     </div>
-  );
+  )
 }

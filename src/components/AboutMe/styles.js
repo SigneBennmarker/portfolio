@@ -10,8 +10,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: "stretch",
       borderRadius: 20, 
       backgroundColor: '#E6E9F3',
-      marginTop: 50,
-      marginBottom:50,
+      height: 370,
       
 
     
@@ -24,7 +23,7 @@ const useStyles = makeStyles(theme => ({
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      width: '90%',
+      width: '100vw',
       height: 370,
       
     },
@@ -32,7 +31,8 @@ const useStyles = makeStyles(theme => ({
       textAlign: "left",
       alignItems: "center",
       justify:"center",
-      paddingTop: 100,
+      padding: 35,
+      
 
     },
   }))

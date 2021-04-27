@@ -11,12 +11,12 @@ const Case = ({ value }) => {
   const classes = useStyles()
   return (
     <Grid container spacing={0} className={classes.root}>
-      <Grid item xs={6} sm={6} className={classes.text}>
+      <Grid item xs={12} sm={6} className={classes.text}>
         <Heading2 value="tottot game"></Heading2>
         <Heading3 value="UX-Design —  Full Stack Development"></Heading3>
 
               </Grid>
-        <Grid item xs={6} sm={6} className={classes.pic} style={{backgroundImage: `url(${Tottot})` }}>
+        <Grid item xs={12} sm={6} className={classes.pic} style={{backgroundImage: `url(${Tottot})` }}>
         {/* <img
             src={Tottot}
             alt="Picture of me"
