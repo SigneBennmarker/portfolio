@@ -15,7 +15,7 @@ export default function Tottot() {
 
   return (
     <Container className={classes.root}>
-      <Heading1 value="Wine information page"></Heading1>
+      <Heading1 value="Wine information page - Lars viner"></Heading1>
     </Container>
   )
 }
