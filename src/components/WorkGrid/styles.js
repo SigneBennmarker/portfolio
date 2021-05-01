@@ -1,12 +1,19 @@
 import { makeStyles } from "@material-ui/core/styles"
+import transitions from "@material-ui/core/styles/transitions"
 
 
 const useStyles = makeStyles(theme => ({
   root: {
-    color: "#ff0000",
     padding: theme.spacing(0),
-    direction: "column",
+    marginTop: theme.spacing(12),
+    [theme.breakpoints.down('sm')]: {
+      marginTop: theme.spacing(5),
+   
+  },
 
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
 
   },
   pic: {
@@ -14,9 +21,27 @@ const useStyles = makeStyles(theme => ({
 
   },
   text: {
-    padding: theme.spacing(2),
+    paddingLeft: '13vw',
+    paddingRight:'13vw',
+
+    [theme.breakpoints.down('sm')]: {
+      paddingLeft: '5vw',
+      paddingRight:'5vw',
+   
+  },
+    textDecoration: 'none',
+    '&:hover': {
+      transform: 'scale(1.05)',
+      transition: '0.6s',
+      transitionTimingFunction: 'ease'
+   },
+    
 
   },
+  link: {
+   textDecoration: 'none'
+      
+  }
 }))
 
 export default useStyles

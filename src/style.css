@@ -7,7 +7,7 @@ padding: 0;
 
 }
 html, body{
-    background-color: #ff0000;
+    background-color: #FCFBF9;
     padding: 0rem;
     margin:0;
     width: 100vw;
@@ -15,8 +15,21 @@ html, body{
 
 }
 
+#show{
+    position: absolute;
+    background-color:#FCFBF9;
+    left: 0px;
+    top: 90px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: #121211 2px solid;
+}
 
-
+#noShow{
+    display: none;
+}
 
 .home{
     background-color: lightcoral;

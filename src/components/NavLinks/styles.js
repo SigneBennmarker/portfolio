@@ -10,15 +10,16 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'space-between',
     textAlign: 'left',
     verticalAlign: 'middle',
-    justify: 'flex-end',
+   
     display: 'flex',
     alignItems: 'space-between',
+    justifyContent: 'flex-end',
 
 
 
   },
   links: {
-    padding: theme.spacing(2),
+    paddingLeft: theme.spacing(3),
     textAlign: "center",
     justify: 'flex-end',
     alignItems: 'space-around',
@@ -31,13 +32,11 @@ const useStyles = makeStyles(theme => ({
 
   ul: {
   listStyle: 'none',
-  padding: theme.spacing(2),
-  width: '45%',
-  alignItems: 'space-between',
+  padding: theme.spacing(0),
+  alignItems: 'center',
   display: 'flex',
-
-  alignContent: 'space-between',
-  alignSelf: 'left',
+  alignContent: 'flex-end',
+  justifyContent: 'left',
   margin: 0,
   
 

@@ -9,6 +9,7 @@ const useStyles = makeStyles({
         lineHeight: 1.8,
         paddingTop: 30,
         paddingBottom: 30,
+        textDecoration: 'none',
         
 
     }});

@@ -4,10 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
     style: {
         color: '#1D0E0E',
-        fontWeight: 700,
+        fontWeight: 600,
         fontFamily: 'Public sans',
-        fontSize: 9,
-        paddingTop: 16
+        fontSize: 22,
+        paddingTop: 0,
+        textDecoration: 'none'
         
 
     }});

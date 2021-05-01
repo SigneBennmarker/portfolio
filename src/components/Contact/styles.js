@@ -9,27 +9,34 @@ const useStyles = makeStyles(theme => ({
     justify: "center",
     alignItems: "stretch",
     borderRadius: 20,
-    backgroundColor: "#E6E9F3",
+    paddingBottom: 200,
+    paddingTop: '17vh',
+     
   },
   element: {
     textAlign: "center",
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
+   
     //   backgroundPosition: 'center',
     //   backgroundSize: 'cover',
     //   backgroundRepeat: 'no-repeat',
-    backgroundColor: "#ffff00",
   },
   elements: {
+    marginTop: theme.spacing(5),
     textAlign: "center",
-    borderBottomRightRadius: 20,
-    borderTopRightRadius: 20,
+    borderRadius: 20,
+    alignItems: "center",
+    justify: "center",
+    alignContent:'space-around',
+
 
     //   backgroundPosition: 'center',
     //   backgroundSize: 'cover',
     //   backgroundRepeat: 'no-repeat',
-    backgroundColor: "#0000ff",
-    padding: theme.spacing(4),
+   // backgroundColor: "#0000ff",
+   
+    paddingBottom: theme.spacing(5),
     justify: "center",
   },
   item: {
@@ -38,6 +45,13 @@ const useStyles = makeStyles(theme => ({
     justify: "center",
     padding: 35,
       },
+  icon:{
+    '&:hover': {
+      transform: 'scale(1.1)',
+      transition: '0.6s',
+      transitionTimingFunction: 'ease-in-out'
+   },
+  }
 }))
 
 export default useStyles

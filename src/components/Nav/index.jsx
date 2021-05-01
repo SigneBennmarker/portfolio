@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom"
-import InfoAboutMe from "../infoAboutme"
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom"
 import ContentsGrid from "../ContentsGrid"
 import Contact from "../Contact"
 import AboutMe from "../AboutMe"
@@ -11,9 +10,10 @@ import Paragraph from "../Paragraph"
 import useStyles from "./styles"
 import { Grid } from "@material-ui/core"
 import NavLinks from "../NavLinks"
-import Hamburger from "../Hamburger"
+import HamburgerMenu from "../HamburgerMenu"
 import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
+import { Link } from "react-scroll"
 
 function SetNavigation() {
   const theme = useTheme()
@@ -22,36 +22,32 @@ function SetNavigation() {
   if (!showHam) {
     return <NavLinks></NavLinks>
   } else {
-    return <Hamburger></Hamburger>
+    return <HamburgerMenu></HamburgerMenu>
   }
 }
 
 export default function Nav() {
   const classes = useStyles()
+  //const AboutRef = useContext(AboutContext);
+
 
   return (
     <div>
-      <BrowserRouter className={classes.root}>
-
       <Grid container spacing={0} className={classes.root}>
-       
-        <Grid item xs={8} sm={8} className={classes.text}>
-        <NavLink
-          className={classes.ul}
-          to="/index"
-          style={{ textDecoration: "none" }}
-        >
-          <Heading1 value="Signe Bennmarker"></Heading1>
-        </NavLink>
+        <Grid item xs={9} sm={10} md={7} lg={8} xl={9} className={classes.text}>
+          <Heading1
+            value="SIGNE BENNMARKER"
+            className={classes.ul}
+            to="/index"
+            style={{ textDecoration: "none" }}
+          ></Heading1>
         </Grid>
-        <Grid item xs={4} sm={4} className={classes.text}>
-        <SetNavigation> </SetNavigation>
+        <Grid item xs={3} sm={2} md={5} lg={4} xl={3} className={classes.text}>
+          <SetNavigation> </SetNavigation>
         </Grid>
-        
       </Grid>
-       
 
-      
+      {/*       
        
         <Switch>
           <Route path="/about">
@@ -72,8 +68,7 @@ export default function Nav() {
           <Route path="">
             <WorkGrid />
           </Route>
-        </Switch>
-      </BrowserRouter>
+        </Switch> */}
     </div>
   )
 }

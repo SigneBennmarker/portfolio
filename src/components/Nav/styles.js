@@ -5,18 +5,18 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     color: "#ff0000",
     padding: theme.spacing(2),
-    direction: "column",
+    
     alignContent: "space-between",
-    textAlign: "left",
+    textAlign: "right",
     verticalAlign: "middle",
-    justify: "flex-end",
-    display: "flex",
-    alignItems: "space-between",
+    display: 'flex',
+    justifyContent: "right",
+
   },
   links: {
     padding: theme.spacing(2),
     textAlign: "center",
-    justify: "flex-end",
+    justifyContent: "left",
     alignItems: "space-around",
 
     alignContent: "space-between",
@@ -36,7 +36,21 @@ const useStyles = makeStyles(theme => ({
 
   text: {
     padding: theme.spacing(2),
+    listStyle: "none",
+    width: "45%",
+    alignItems: "right",
+    display: "flex",
+
+    alignContent: "space-between",
+    margin: 0,
   },
+  navOpt:{
+    alignSelf: "right",
+    alignItems: "space-between",
+    alignContent: 'flex-end',
+
+
+  }
 }))
 
 export default useStyles

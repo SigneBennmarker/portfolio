@@ -19,7 +19,6 @@ import MiddleSection from'../components/MiddleSection'
 import { Fade, Container } from '@material-ui/core';
 import Tottot from '../components/Tottot'
 import LarsViner from '../components/LarsViner'
-import Contactpage from '../pages/contact'
 
 // const WorkContext = React.createContext(WorkRef);
 // const ContactContext = React.createContext();
@@ -45,14 +44,17 @@ export default function Home() {
      {/* <MiddleSection /> */}
        <Switch>
        
-          <Route path="/about">
+          <Route path="/about/">
             <AboutMe />
           </Route>
-          <Route path="contact">
-            <Contactpage />
+          <Route path="/contact/">
+            <Contact />
           </Route>
-          <Route path="/myWork">
+          <Route path="/mywork">
             <WorkGrid />
+          </Route>
+          <Route path="/index">
+          <Home />
           </Route>
           
           <Route path="/tottot">
@@ -61,7 +63,9 @@ export default function Home() {
           <Route path="/larsviner">
             <LarsViner />
           </Route>
-          <Route path='/'>
+          
+          
+          <Route path='*'>
           <WorkGrid />
           </Route>
         </Switch> 
