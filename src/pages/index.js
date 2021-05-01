@@ -45,7 +45,7 @@ export default function Home() {
      {/* <MiddleSection /> */}
        <Switch>
        
-          <Route path="/about">
+          <Route path="about">
             <AboutMe />
           </Route>
           <Route path="contact">
