@@ -24,7 +24,7 @@ import LarsViner from '../components/LarsViner'
 // const ContactContext = React.createContext();
 
 
-export default function Home() {
+export default function About() {
   // const AboutRef = useRef(null)
   // const WorkRef = useRef(null);
   // const ContactRef = useRef(null);
@@ -60,7 +60,7 @@ export default function Home() {
             <WorkGrid />
           </Route>
           <Route path="/index">
-          <Home />
+          <WorkGrid />
           </Route>
           
           
