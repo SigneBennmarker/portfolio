@@ -3,15 +3,16 @@ import "../style.css"
 import NavBar from "../components/Nav"
 import WorkGrid from "../components/WorkGrid"
 
-export default function Home() {
+const Home = () => {
  
 
   return (
-    <>
+    <div>
       <NavBar></NavBar>
-      hejsam svejsan
       <WorkGrid> </WorkGrid>
-    </>
+    </div>
   )
 }
+
+export default Home;
 
