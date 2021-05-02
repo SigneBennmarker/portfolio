@@ -24,7 +24,7 @@ import LarsViner from '../components/LarsViner'
 // const ContactContext = React.createContext();
 
 
-export default function Home() {
+export default function Work() {
   // const AboutRef = useRef(null)
   // const WorkRef = useRef(null);
   // const ContactRef = useRef(null);
@@ -32,44 +32,13 @@ export default function Home() {
 
 
   return (
-    <BrowserRouter>
+    <>
 
     
     <NavBar></NavBar>
-{/*     
-      <AboutMe ></AboutMe>
-      <WorkGrid></WorkGrid>
-      <Contact></Contact> */}
+    <WorkGrid/>
 
-     {/* <MiddleSection /> */}
-       <Switch>
-       
-          
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/mywork">
-            <WorkGrid />
-          </Route>
-          <Route path="/index">
-          <Home />
-          </Route>
-          <Route path="/about">
-            <AboutMe />
-          </Route>          
-          <Route path="/tottot">
-            <Tottot />
-          </Route>
-          <Route path="/larsviner">
-            <LarsViner />
-          </Route>
-          
-          
-          <Route path='*'>
-          <WorkGrid />
-          </Route>
-        </Switch> 
-        </BrowserRouter>
+     </>
     )
 }
 

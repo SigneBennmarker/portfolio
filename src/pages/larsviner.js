@@ -32,44 +32,13 @@ export default function Home() {
 
 
   return (
-    <BrowserRouter>
+    <>
 
     
     <NavBar></NavBar>
-{/*     
-      <AboutMe ></AboutMe>
-      <WorkGrid></WorkGrid>
-      <Contact></Contact> */}
-
-     {/* <MiddleSection /> */}
-       <Switch>
-       
-          <Route path="/about/">
-            <AboutMe />
-          </Route>
-          <Route path="/contact/">
-            <Contact />
-          </Route>
-          <Route path="/mywork">
-            <WorkGrid />
-          </Route>
-          <Route path="/index">
-          <Home />
-          </Route>
-          
-          <Route path="/tottot">
-            <Tottot />
-          </Route>
-          <Route path="/larsviner">
-            <LarsViner />
-          </Route>
-          
-          
-          <Route path='*'>
-          <WorkGrid />
-          </Route>
-        </Switch> 
-        </BrowserRouter>
+    <LarsViner/>
+</>
+     
     )
 }
 

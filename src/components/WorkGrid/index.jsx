@@ -3,14 +3,14 @@ import Grid from "@material-ui/core/Grid";
 import useStyles from "./styles"
 import { makeStyles } from "@material-ui/core/styles"
 import { spacing } from '@material-ui/system';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 import AboutMe from "../AboutMe"
 import Case from "../Case"
 import Contact from "../Contact";
 import Heading1 from '../Heading1'
 import Tottot from '../../material/1x/tottotCasePic.png'
 import LarsViner from '../../material/1x/LarsCasePic.png'
-
+import { Link } from 'gatsby'
 
 
 export default function WorkGrid() {

@@ -1,6 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom"
+import { BrowserRouter, Route, Switch,  } from "react-router-dom"
+import { Link } from 'gatsby'
 
 import Paragraph from "../Paragraph"
 import useStyles from "./styles"
@@ -19,7 +20,7 @@ export default function NavLinks() {
       }}
     >
       <li className={classes.links}>
-        <NavLink
+        <Link
           to="/mywork"
           style={{ textDecoration: "none" }}
           activeStyle={{
@@ -29,10 +30,10 @@ export default function NavLinks() {
           }}
         >
           <h3> My work</h3>
-        </NavLink>
+        </Link>
       </li>
       <li className={classes.links}>
-        <NavLink
+        <Link
           to="/about"
           style={{ textDecoration: "none" }}
           activeStyle={{
@@ -42,11 +43,11 @@ export default function NavLinks() {
           }}
         >
           <h3>About Me</h3>
-        </NavLink>
+        </Link>
       </li>
 
       <li className={classes.links}>
-        <NavLink
+        <Link
           to="/contact"
           style={{ textDecoration: "none" }}
           activeStyle={{
@@ -56,7 +57,7 @@ export default function NavLinks() {
           }}
         >
           <h3>Contact</h3>
-        </NavLink>
+        </Link>
       </li>
     </ul>
   )

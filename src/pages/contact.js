@@ -6,6 +6,7 @@ import {
   Link,
   useLocation,
   Router,
+  NavLink,
 } from "react-router-dom"
 // import Grid from '@material-ui/core/Grid';
 //¨
@@ -32,17 +33,8 @@ export default function Contactpage() {
 
 
   return (
-    <></>    )
+    <>
+    <NavBar></NavBar>
+    <Contact/>
+    </>    )
 }
-
-// export default function Home() {
-
-//     return (
-
-//         <div className = "comingSoon" onLoad = "FadeIn()">
-
-//         <h1>COMING SOON</h1>
-
-//         </div>
-//     )
-// }

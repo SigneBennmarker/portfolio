@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
+import { Link } from 'gatsby'
 import NavLinks from "../NavLinks"
 import useStyles from "./styles"
-import { NavLink } from "react-router-dom"
 import Heading2 from "../Heading2";
 
 
@@ -12,9 +12,9 @@ export default function Menu() {
   return (
 
     <ul className={classes.root}>
-        <li className = {classes.link}><NavLink to="/about" style={{ textDecoration: "none" }}><Heading2 value="About"></Heading2></NavLink></li>
-        <li className = {classes.link}><NavLink to="/work" style={{ textDecoration: "none" }}><Heading2 value="Work"></Heading2></NavLink></li>
-        <li className = {classes.link}><NavLink to="/contact" style={{ textDecoration: "none" }}><Heading2 value="Contact"></Heading2></NavLink></li>
+        <li className = {classes.link}><Link to="/about" style={{ textDecoration: "none" }}><Heading2 value="About"></Heading2></Link></li>
+        <li className = {classes.link}><Link to="/work" style={{ textDecoration: "none" }}><Heading2 value="Work"></Heading2></Link></li>
+        <li className = {classes.link}><Link to="/contact" style={{ textDecoration: "none" }}><Heading2 value="Contact"></Heading2></Link></li>
     </ul>
 
   
