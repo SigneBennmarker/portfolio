@@ -12,8 +12,8 @@ export default function Menu() {
   return (
 
     <ul className={classes.root}>
+        <li className = {classes.link}><Link to="/mywork" style={{ textDecoration: "none" }}><Heading2 value="Work"></Heading2></Link></li>
         <li className = {classes.link}><Link to="/about" style={{ textDecoration: "none" }}><Heading2 value="About"></Heading2></Link></li>
-        <li className = {classes.link}><Link to="/work" style={{ textDecoration: "none" }}><Heading2 value="Work"></Heading2></Link></li>
         <li className = {classes.link}><Link to="/contact" style={{ textDecoration: "none" }}><Heading2 value="Contact"></Heading2></Link></li>
     </ul>
 
