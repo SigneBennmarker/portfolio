@@ -49,7 +49,7 @@ export default function Home() {
             <AboutMe />
           </Route>
           <Route path="contact">
-            <Contactpage />
+            <Contact />
           </Route>
           <Route path="/myWork">
             <WorkGrid />

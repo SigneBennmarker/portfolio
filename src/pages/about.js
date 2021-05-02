@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect, useContext, createContext } from "react"
 import {
   BrowserRouter,
@@ -25,7 +24,7 @@ import LarsViner from '../components/LarsViner'
 // const ContactContext = React.createContext();
 
 
-export default function About() {
+export default function Home() {
   // const AboutRef = useRef(null)
   // const WorkRef = useRef(null);
   // const ContactRef = useRef(null);
@@ -33,7 +32,44 @@ export default function About() {
 
 
   return (
-   <> </>
+    <BrowserRouter>
+
+    
+    <NavBar></NavBar>
+{/*     
+      <AboutMe ></AboutMe>
+      <WorkGrid></WorkGrid>
+      <Contact></Contact> */}
+
+     {/* <MiddleSection /> */}
+       <Switch>
+       
+          <Route path="/about">
+            <AboutMe />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/mywork">
+            <WorkGrid />
+          </Route>
+          <Route path="/index">
+          <Home />
+          </Route>
+          
+          <Route path="/tottot">
+            <Tottot />
+          </Route>
+          <Route path="/larsviner">
+            <LarsViner />
+          </Route>
+          
+          
+          <Route path='*'>
+          <WorkGrid />
+          </Route>
+        </Switch> 
+        </BrowserRouter>
     )
 }
 
