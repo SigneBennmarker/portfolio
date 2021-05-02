@@ -35,12 +35,13 @@ const useStyles = makeStyles(theme => ({
   },
 
   text: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(),
     listStyle: "none",
     width: "45%",
-    alignItems: "right",
     display: "flex",
+    alignItems: "right",
 
+    paddingTop: theme.spacing(4),
     alignContent: "space-between",
     margin: 0,
   },
@@ -50,7 +51,27 @@ const useStyles = makeStyles(theme => ({
     alignContent: 'flex-end',
 
 
-  }
+  },
+  logo: {
+    paddingTop: theme.spacing(4),
+    listStyle: "none",
+    width: "45%",
+    alignItems: "right",
+    display: "flex",
+    padding:theme.spacing(2),
+    alignContent: "space-between",
+    margin: 0,
+    [theme.breakpoints.up('lg')]: {
+    paddingLeft: theme.spacing(15),
+
+
+  },
+  [theme.breakpoints.up('md')]: {
+    paddingLeft: theme.spacing(10),
+
+
+  },  }
+
 }))
 
 export default useStyles

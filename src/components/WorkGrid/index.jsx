@@ -33,7 +33,7 @@ export default function WorkGrid() {
        
         <Grid item xs={12} sm={12} className={classes.text}>
         <Link to="/larsviner" className={classes.link} >
-        <Case heading="Lars Viner"  subheading= "UX-Design - Webb development" picture={{backgroundImage: `url(${LarsViner})` }} text ="Me and two friands created this webbased application as a part of a coarse but have continued to develop the application since. Together we have worked"></Case>
+        <Case heading="Lars Viner"  subheading= "UX-Design - Webb development" picture={{backgroundImage: `url(${LarsViner})` }} text ="A webside containing all there is to know about the wines of Italy"></Case>
         </Link>
         </Grid>
         

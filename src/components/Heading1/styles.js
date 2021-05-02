@@ -4,6 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     style: {
         [theme.breakpoints.down('sm')]: {
+        fontSize: 32,
+        textDecoration: 'none',
+     
+    },
+    [theme.breakpoints.down('xs')]: {
         fontSize: 20,
         textDecoration: 'none',
      
