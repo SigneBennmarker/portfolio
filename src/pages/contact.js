@@ -32,42 +32,7 @@ export default function Contactpage() {
 
 
   return (
-    <BrowserRouter>
-
-    
-    <NavBar></NavBar>
-{/*     
-      <AboutMe ></AboutMe>
-      <WorkGrid></WorkGrid>
-      <Contact></Contact> */}
-
-     {/* <MiddleSection /> */}
-       <Switch>
-       
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/myWork">
-            <WorkGrid />
-          </Route>
-          <Route path="/index">
-            <WorkGrid />
-          </Route>
-          <Route path="/tottot">
-            <Tottot />
-          </Route>
-          <Route path="/larsviner">
-            <LarsViner />
-          </Route>
-          <Route path='/'>
-          <WorkGrid />
-          </Route>
-        </Switch> 
-        </BrowserRouter>
-    )
+    <></>    )
 }
 
 // export default function Home() {
