@@ -7,8 +7,8 @@ const useStyles = makeStyles({
         fontWeight: 400,
         fontFamily: 'Public sans',
         lineHeight: 1.8,
-        paddingTop: 30,
-        paddingBottom: 30,
+        paddingTop: 15,
+        paddingBottom: 15,
         textDecoration: 'none',
         
 

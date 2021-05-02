@@ -3,7 +3,7 @@ import "../style.css"
 import NavBar from "../components/Nav"
 import WorkGrid from "../components/WorkGrid"
 
-const Home = () => {
+const IndexPage = () => {
  
 
   return (
@@ -14,5 +14,5 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default IndexPage;
 

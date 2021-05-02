@@ -60,8 +60,6 @@ h2{
     font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     color: #121211;
-    font-size: 1.1rem;
-
 
 }
  /*
@@ -69,14 +67,14 @@ h2{
     background-color: aquamarine;
     width: 90vw;
 }
- p{
+ */
+ a{
     font-weight: 500;
     font-family: 'Public Sans', sans-serif;
-    align-items: right;
     color: #121211;    
     line-height: 2rem;
     font-size: 1rem;
-    }  */
+    } 
 
 .ContentsGrid{
     margin: 8rem 0rem;
