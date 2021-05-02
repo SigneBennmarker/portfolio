@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <NavBar></NavBar>
-      <WorkGrid />
+      <Contact />
     </>
   )
 }
