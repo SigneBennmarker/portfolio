@@ -42,7 +42,13 @@ export default function Home() {
       <Contact></Contact> */}
 
      {/* <MiddleSection /> */}
-       <Switch>
+       <Switch><Route path="/tottot">
+            <Tottot />
+          </Route>
+          <Route path="/larsviner">
+            <LarsViner />
+          </Route>
+
        
           <Route path="/about">
             <AboutMe />
@@ -57,12 +63,7 @@ export default function Home() {
           <Home />
           </Route>
           
-          <Route path="/tottot">
-            <Tottot />
-          </Route>
-          <Route path="/larsviner">
-            <LarsViner />
-          </Route>
+          
           
           
           <Route path='*'>
