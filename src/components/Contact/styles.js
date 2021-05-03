@@ -18,9 +18,6 @@ const useStyles = makeStyles(theme => ({
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
    
-    //   backgroundPosition: 'center',
-    //   backgroundSize: 'cover',
-    //   backgroundRepeat: 'no-repeat',
   },
   elements: {
     marginTop: theme.spacing(5),
@@ -29,13 +26,6 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     justify: "center",
     alignContent:'space-around',
-
-
-    //   backgroundPosition: 'center',
-    //   backgroundSize: 'cover',
-    //   backgroundRepeat: 'no-repeat',
-   // backgroundColor: "#0000ff",
-   
     paddingBottom: theme.spacing(5),
     justify: "center",
   },

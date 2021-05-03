@@ -24,7 +24,7 @@ import LarsViner from '../components/LarsViner'
 // const ContactContext = React.createContext();
 
 
-export default function Work() {
+export default function MyWork() {
   // const AboutRef = useRef(null)
   // const WorkRef = useRef(null);
   // const ContactRef = useRef(null);
