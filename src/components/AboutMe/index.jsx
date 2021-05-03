@@ -39,12 +39,12 @@ const useStyles = makeStyles(theme => ({
 }))
 
 export default function AboutMe() {
-  const classes = useStyles()
+  const about = useStyles()
 
   return (
-    <Grid container spacing={0} className={classes.root}>
-      <Grid item xs={0} sm={1} className={classes.pic}></Grid>
-      <Grid item xs={12} sm={5} className={classes.pic}>
+    <Grid container spacing={0} className={about.root}>
+      <Grid item xs={0} sm={1} className={about.pic}></Grid>
+      <Grid item xs={12} sm={5} className={about.pic}>
         <img
           src={Portrait}
           alt="Picture of me"
@@ -52,7 +52,7 @@ export default function AboutMe() {
           width="75%"
         />
       </Grid>
-      <Grid item xs={12} sm={5} className={classes.text}>
+      <Grid item xs={12} sm={5} className={about.text}>
         <Heading1 value="Hi, my name is Signe!"></Heading1>
 
         <Paragraph
@@ -62,7 +62,7 @@ export default function AboutMe() {
                love to watch reality shows, work out or listen to podcasts. "
         ></Paragraph>
       </Grid>
-      <Grid item xs={0} sm={1} className={classes.pic}></Grid>
+      <Grid item xs={0} sm={1} className={about.pic}></Grid>
     </Grid>
   )
 }
