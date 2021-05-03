@@ -9,7 +9,7 @@ import {
   NavLink,
 } from "react-router-dom"
 // import Grid from '@material-ui/core/Grid';
-//¨
+import Grid from "@material-ui/core/Grid"
 import "../style.css"
 import ContentsGrid from "../components/ContentsGrid"
 import NavBar from "../components/Nav"

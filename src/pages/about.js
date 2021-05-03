@@ -16,7 +16,7 @@ import AboutMe from "../components/AboutMe"
 import Contact from "../components/Contact"
 import WorkGrid from "../components/WorkGrid"
 import MiddleSection from'../components/MiddleSection'
-import { Fade, Container } from '@material-ui/core';
+import Grid from "@material-ui/core/Grid"
 import Tottot from '../components/Tottot'
 import LarsViner from '../components/LarsViner'
 
