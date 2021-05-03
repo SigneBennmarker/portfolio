@@ -10,7 +10,7 @@ import {
 // import Grid from '@material-ui/core/Grid';
 //¨
 import "../style.css"
-import ContentsGrid from "../components/ContentsGrid"
+import Grid from "@material-ui/core/Grid"
 import NavBar from "../components/Nav"
 import AboutMe from "../components/AboutMe"
 import Contact from "../components/Contact"
