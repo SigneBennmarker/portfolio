@@ -1,11 +1,10 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import Paper from "@material-ui/core/Paper"
 import Grid from "@material-ui/core/Grid"
-import Link from "react-router-dom"
-import Portrait from "../../material/FullSizeRender.jpg"
+
 import Paragraph from "../Paragraph"
 import Heading1 from "../Heading1"
+import { StaticImage } from "gatsby-plugin-image"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -13,13 +12,12 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
     justify: "space-around",
     alignItems: "stretch",
-    paddingTop: '12vh',
+    paddingTop: "12vh",
     paddingBottom: theme.spacing(5),
 
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down("xs")]: {
       paddingTop: theme.spacing(2),
-   
-  },
+    },
   },
   pic: {
     padding: theme.spacing(0),
@@ -31,10 +29,9 @@ const useStyles = makeStyles(theme => ({
     textAlign: "left",
     color: theme.palette.text.secodary,
     alignItems: "center",
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down("xs")]: {
       padding: theme.spacing(2),
-   
-  },
+    },
   },
 }))
 
@@ -43,16 +40,18 @@ export default function AboutMe() {
 
   return (
     <Grid container spacing={0} className={about.root}>
-      <Grid item xs={0} sm={1} className={about.pic}></Grid>
-      <Grid item xs={12} sm={5} className={about.pic}>
-        <img
-          src={Portrait}
+      <Grid item xs={0} sm={3}></Grid>
+      <Grid item xs={12} sm={3} className={about.pic}>
+        <StaticImage
+          src="../../material/FullSizeRender.jpg"
           alt="Picture of me"
           className="Portrait"
-          width="75%"
+          placeholder="blurred"
+          width={705}
         />
       </Grid>
-      <Grid item xs={12} sm={5} className={about.text}>
+      <Grid item xs={0} sm={1}></Grid>
+      <Grid item xs={12} sm={3} className={about.text}>
         <Heading1 value="Hi, my name is Signe!"></Heading1>
 
         <Paragraph
@@ -62,7 +61,7 @@ export default function AboutMe() {
                love to watch reality shows, work out or listen to podcasts. "
         ></Paragraph>
       </Grid>
-      <Grid item xs={0} sm={1} className={about.pic}></Grid>
+      <Grid item xs={0} sm={2}></Grid>
     </Grid>
   )
 }

@@ -9,7 +9,6 @@ import Allmant from "../../material/allmant_Lars.png"
 import Heading2 from "../Heading2"
 import Heading3 from "../Heading3"
 
-
 import Heading1 from "../Heading1"
 import { Container } from "@material-ui/core"
 import Paragraph from "../Paragraph"
@@ -19,14 +18,13 @@ export default function LarsViner() {
 
   return (
     <div className={classes.root}>
-      <Heading1 value="Lars Viner - A wine information website"></Heading1>
+      <Heading1 value="A wine information website"></Heading1>
       <Paragraph
         className={classes.text}
         value="I worked with this project as a part of a course called Web Technology for Engineers systems. I worked alone on this project. The goal of the project was to find an already existing website, create your own redesign of that page and finally implement the page using HTML/CSS and javascript. The site i chose to recreate was a page called Lars Vinsida."
       ></Paragraph>
 
       <a href="http://larsvinsida.vininfo.nu/italien/italien.htm">
-
         Check out the current design of Lars Vinsida here
       </a>
 
@@ -42,8 +40,8 @@ export default function LarsViner() {
         className={classes.pic}
         width="85%"
       />
-    <Heading2 value = "The results" className={classes.text}></Heading2>
-    <Heading3 value = "Desktop version" className={classes.text}></Heading3>
+      <Heading2 value="The results" className={classes.text}></Heading2>
+      <Heading3 value="Desktop version" className={classes.text}></Heading3>
 
       <Grid container spacing={0} className={classes.gridroot}>
         <Grid item xs={12} sm={6} ml={4} className={classes.pic}>
@@ -73,9 +71,6 @@ export default function LarsViner() {
           />
         </Grid>
       </Grid>
-
-      <Heading3 value = "Mobile version" className={classes.text}></Heading3>
-
     </div>
   )
 }

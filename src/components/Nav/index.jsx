@@ -1,9 +1,4 @@
 import React, { useState, useEffect, useContext } from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import ContentsGrid from "../ContentsGrid"
-import Contact from "../Contact"
-import AboutMe from "../AboutMe"
-import WorkGrid from "../WorkGrid"
 import Heading1 from "../Heading1"
 import Paragraph from "../Paragraph"
 import useStyles from "./styles"
@@ -27,49 +22,23 @@ function SetNavigation() {
 
 export default function Nav() {
   const classes = useStyles()
-  //const AboutRef = useContext(AboutContext);
-
 
   return (
     <div>
       <Grid container spacing={0} className={classes.root}>
         <Grid item xs={9} sm={10} md={7} lg={8} xl={8} className={classes.logo}>
-          <Link  to="/" style={{ textDecoration: "none" }}>
-          <Heading1
-            value="SIGNE BENNMARKER"
-            className={classes.ul}
-           
-            style={{ textDecoration: "none" }}
-          ></Heading1>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Heading1
+              value="SIGNE BENNMARKER"
+              className={classes.ul}
+              style={{ textDecoration: "none" }}
+            ></Heading1>
           </Link>
         </Grid>
         <Grid item xs={3} sm={2} md={5} lg={4} xl={3} className={classes.text}>
           <SetNavigation> </SetNavigation>
         </Grid>
       </Grid>
-
-      {/*       
-       
-        <Switch>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/myWork">
-            <WorkGrid />
-          </Route>
-          <Route path="/index">
-            <WorkGrid />
-          </Route>
-          <Route path="/">
-            <WorkGrid />
-          </Route>
-          <Route path="">
-            <WorkGrid />
-          </Route>
-        </Switch> */}
     </div>
   )
 }

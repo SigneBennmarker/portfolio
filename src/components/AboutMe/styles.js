@@ -27,6 +27,10 @@ const useStyles = makeStyles(theme => ({
       backgroundRepeat: 'no-repeat',
       width: '100vw',
       height: 370,
+      [theme.breakpoints.up("xs")]: {
+        paddingRight: theme.spacing(5),
+        paddingLeft: theme.spacing(5)
+      },
       
     },
     text: {
@@ -34,6 +38,8 @@ const useStyles = makeStyles(theme => ({
       alignItems: "center",
       justify:"center",
       padding: 35,
+      paddingeft: theme.spacing(10),
+      paddingRight: theme.spacing(10),
       
 
     },

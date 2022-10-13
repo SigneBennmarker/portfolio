@@ -1,14 +1,6 @@
-import React, { useRef } from "react"
-import Grid from "@material-ui/core/Grid"
+import React from "react"
 import useStyles from "./styles"
-import { makeStyles } from "@material-ui/core/styles"
-import { spacing } from "@material-ui/system"
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom"
-import AboutMe from "../AboutMe"
-import Case from "../Case"
-import Contact from "../Contact"
 import Heading1 from "../Heading1"
-import { Fade, Container } from "@material-ui/core"
 import Paragraph from "../Paragraph"
 import TottotMockups from "../../material/tottotMockups.png"
 
@@ -34,9 +26,12 @@ export default function Tottot() {
         width="90%"
       />
 
-      <Paragraph className={classes.text} value = "We shared a lot of the work and were all engaged in most elements of the
+      <Paragraph
+        className={classes.text}
+        value="We shared a lot of the work and were all engaged in most elements of the
         creation of the web application, though I had the main responsibility
-        regarding the wireframing, hosting and emailing functions."></Paragraph>
+        regarding the wireframing, hosting and emailing functions."
+      ></Paragraph>
     </div>
   )
 }

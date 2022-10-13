@@ -1,11 +1,9 @@
 import React from "react"
-import { makeStyles } from "@material-ui/core/styles"
-import { BrowserRouter, Route, Switch,  } from "react-router-dom"
-import { Link } from 'gatsby'
+
+import { Link } from "gatsby"
 
 import Paragraph from "../Paragraph"
 import useStyles from "./styles"
-import Heading3 from "../Heading3"
 
 export default function NavLinks() {
   const classes = useStyles()

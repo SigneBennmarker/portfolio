@@ -15,15 +15,3 @@ export default function MyWork() {
     </div>
   )
 }
-
-// export default function Home() {
-
-//     return (
-
-//         <div className = "comingSoon" onLoad = "FadeIn()">
-
-//         <h1>COMING SOON</h1>
-
-//         </div>
-//     )
-// }
