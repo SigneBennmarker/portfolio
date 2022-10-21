@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core/styles"
-import transitions from "@material-ui/core/styles/transitions"
 
 const useStyles = makeStyles(theme => ({
   root: {

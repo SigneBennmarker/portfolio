@@ -40,8 +40,8 @@ export default function AboutMe() {
 
   return (
     <Grid container spacing={0} className={about.root}>
-      <Grid item xs={0} sm={3}></Grid>
-      <Grid item xs={12} sm={3} className={about.pic}>
+      <Grid item xs={2} sm={2}></Grid>
+      <Grid item xs={8} sm={3} className={about.pic}>
         <StaticImage
           src="../../material/FullSizeRender.jpg"
           alt="Picture of me"
@@ -51,12 +51,12 @@ export default function AboutMe() {
         />
       </Grid>
       <Grid item xs={0} sm={1}></Grid>
-      <Grid item xs={12} sm={3} className={about.text}>
+      <Grid item xs={12} sm={4} className={about.text}>
         <Heading1 value="Hi, my name is Signe!"></Heading1>
 
         <Paragraph
           value="I am a M.Sc.Eng student in interacion and design at Umeå 
-            University and strive to learn more about my big intests, UX- design and full stack development. 
+            University and strive to learn more about my big intests, UX design and front end development. 
             When I’m not busy doing that I 
                love to watch reality shows, work out or listen to podcasts. "
         ></Paragraph>

@@ -1,8 +1,5 @@
 import React from "react"
-
 import { Link } from "gatsby"
-
-import Paragraph from "../Paragraph"
 import useStyles from "./styles"
 
 export default function NavLinks() {

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import NavLinks from "../NavLinks"
 import useStyles from "./styles"
 import Heading2 from "../Heading2"
 

@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from "react"
+import React from "react"
 import Heading1 from "../Heading1"
-import Paragraph from "../Paragraph"
 import useStyles from "./styles"
 import { Grid } from "@material-ui/core"
 import NavLinks from "../NavLinks"
