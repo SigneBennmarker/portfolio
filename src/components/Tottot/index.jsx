@@ -13,8 +13,8 @@ export default function Tottot() {
 
       <Paragraph
         className={classes.text}
-        value="The tottot conversation game is inspired by the two-choice questions on
-     The tottot conversation game is inspired by the two-choice questions on Instagram story that followers can vote on. With this application, these kinds of fun dividing questions become more accessible and easy to spread. The target group is young adults. They can use the application by themselves out of curiosity to get to know themselves and see what others' opinions are, or with friends to start a conversation."
+        value="
+     The tottot conversation game is inspired by the two-choice questions on Instagram story that followers can vote on. With this application, these kinds of fun dividing questions become more accessible and easy to spread. The target group is young adults. They can use the application by themselves out of curiosity to get to know themselves, or with friends to start a conversation."
       ></Paragraph>
 
       <Paragraph value="The goal of the project was to create a web-based database-driven application where users can play a simple quiz game. The database is created in phpMyAdmin and the MVC structure is developed in CodeIgniter with PHP, HTML, CSS and JavaScript. The name of the quiz is tottot."></Paragraph>

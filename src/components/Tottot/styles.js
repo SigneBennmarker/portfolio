@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      alignItems: 'center'
+      alignItems: "center",
     },
 
     [theme.breakpoints.down("xs")]: {
@@ -19,9 +19,8 @@ const useStyles = makeStyles(theme => ({
     },
   },
   text: {
-    alignSelf: 'left'
-  }
-
+    alignSelf: "left",
+  },
 }))
 
 export default useStyles

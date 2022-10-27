@@ -19,7 +19,7 @@ export default function LarsViner() {
       <Heading1 value="A wine information website"></Heading1>
       <Paragraph
         className={classes.text}
-        value="I worked with this project as a part of a course called Web Technology for Engineers systems. I worked alone on this project. The goal of the project was to find an already existing website, create your own redesign of that page and finally implement the page using HTML/CSS and JavaScript. The site I chose to recreate was a page called Lars Vinsida."
+        value="I worked with this project as a part of a course called Web Technology for Engineers systems. I worked alone on this project. The goal of the project was to find an already existing website, create my own redesign of that page and finally implement the page using HTML/CSS and JavaScript. The site I chose to recreate was a page called Lars Vinsida."
       ></Paragraph>
 
       <a href="http://larsvinsida.vininfo.nu/italien/italien.htm">

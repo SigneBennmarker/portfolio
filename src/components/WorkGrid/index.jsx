@@ -20,7 +20,7 @@ export default function WorkGrid() {
               heading="tottot"
               subheading="UX Design & Full Stack Development"
               picture={{ backgroundImage: `url(${Tottot})` }}
-              text="Me and two friands created this webbased application as a part of a coarse but have continued to develop the application since. Together we have worked"
+              text="A webbased application created to start conversation."
             ></Case>
           </Link>
         </Grid>
@@ -31,7 +31,7 @@ export default function WorkGrid() {
               heading="Vinsida"
               subheading="UX Design & Webb development"
               picture={{ backgroundImage: `url(${LarsViner})` }}
-              text="A website containing all there is to know about the wines of Italy"
+              text="A website containing all there is to know about the wines of Italy."
             ></Case>
           </Link>
         </Grid>
