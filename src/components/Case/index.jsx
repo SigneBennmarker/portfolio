@@ -9,7 +9,7 @@ const Case = ({ heading, subheading, picture, text }) => {
   const caseStyle = useStyles()
   return (
     <Grid container spacing={0} className={caseStyle.root} style={picture}>
-      <Grid item xs={12} sm={6} className={caseStyle.text}>
+      <Grid item xs={12} sm={5} className={caseStyle.text}>
         <Heading2 value={heading}></Heading2>
         <Heading3 value={subheading}></Heading3>
         <div className={caseStyle.paragraph}>

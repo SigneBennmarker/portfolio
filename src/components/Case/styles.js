@@ -15,10 +15,10 @@ const useStyles = makeStyles(theme => ({
     height: 470,
 
     [theme.breakpoints.down("xs")]: {
-      marginBottom: theme.spacing(7),
-      backgroundPosition: "bottom",
+      marginBottom: theme.spacing(1),
+      backgroundPosition: "right bottom",
       backgroundSize: "contain",
-      height: 320,
+      height: 220,
     },
   },
   pic: {
@@ -43,6 +43,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   paragraph: {
+
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },

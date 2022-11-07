@@ -9,6 +9,11 @@ const useStyles = makeStyles(theme => ({
     borderRadius: 20,
     paddingBottom: 200,
     paddingTop: "17vh",
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: "12vh",
+      paddingBottom: 20,
+
+    },
   },
   element: {
     textAlign: "center",

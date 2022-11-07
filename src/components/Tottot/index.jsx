@@ -3,6 +3,7 @@ import useStyles from "./styles"
 import Heading1 from "../Heading1"
 import Paragraph from "../Paragraph"
 import TottotMockups from "../../material/tottotMockups.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Tottot() {
   const classes = useStyles()
@@ -19,8 +20,15 @@ export default function Tottot() {
 
       <Paragraph value="The goal of the project was to create a web-based database-driven application where users can play a simple quiz game. The database is created in phpMyAdmin and the MVC structure is developed in CodeIgniter with PHP, HTML, CSS and JavaScript. The name of the quiz is tottot."></Paragraph>
       <Paragraph value="I worked with this project as a part of a course called Databases and Web based systems,  and because of that the focus of the project has been on the backend. The system is built upon two connected databases, one that stores all questions with answers and modes where the question categories are stored. The other database only contains one schema, that contains the user information.  The users are, as of right now, people that are trusted to add, edit and delete the questions of the game."></Paragraph>
-      <img src={TottotMockups} alt="Mockups" className="Portrait" width="90%" />
 
+
+      <StaticImage
+        src="../../material/tt2.jpg"
+        alt="tottot"
+        className="Portrait"
+        placeholder="blurred"
+
+      />
       <Paragraph
         className={classes.text}
         value="We shared a lot of the work and were all engaged in most elements of the
