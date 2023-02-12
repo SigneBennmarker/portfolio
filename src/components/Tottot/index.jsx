@@ -14,27 +14,25 @@ export default function Tottot() {
 
       <Paragraph
         className={classes.text}
-        value="
-     The tottot conversation game is inspired by the two-choice questions on Instagram story that followers can vote on. With this application, these kinds of fun dividing questions become more accessible and easy to spread. The target group is young adults. They can use the application by themselves out of curiosity to get to know themselves, or with friends to start a conversation."
+        value="The tottot conversation game is inspired by the two-choice questions on Instagram stories that followers can vote on. Tottot makes these fun, divisive questions more accessible and easier to share, with young adults as its target audience. Users can play the game by themselves for self-discovery or with friends to start a conversation."
       ></Paragraph>
 
-      <Paragraph value="The goal of the project was to create a web-based database-driven application where users can play a simple quiz game. The database is created in phpMyAdmin and the MVC structure is developed in CodeIgniter with PHP, HTML, CSS and JavaScript. The name of the quiz is tottot."></Paragraph>
-      <Paragraph value="I worked with this project as a part of a course called Databases and Web based systems,  and because of that the focus of the project has been on the backend. The system is built upon two connected databases, one that stores all questions with answers and modes where the question categories are stored. The other database only contains one schema, that contains the user information.  The users are, as of right now, people that are trusted to add, edit and delete the questions of the game."></Paragraph>
+      <Paragraph value="The project aimed to create a web-based, database-driven quiz game called tottot. It was developed using the CodeIgniter framework with PHP, HTML, CSS, and JavaScript, with the database created in phpMyAdmin. The project's focus was on the backend as it was part of a course on Databases and Web-based Systems."></Paragraph>
 
-
+      <Paragraph
+        className={classes.text}
+        value="The system consists of two connected databases, one storing all questions and answers and question categories, while the other only contains user information. Currently, only trusted users are allowed to add, edit, and delete questions in the game."
+      ></Paragraph>
+      <Paragraph
+        className={classes.text}
+        value="As a team, we collaborated on the creation of the web application and each contributed to various aspects of the project. My primary focus was on wireframing, hosting, and emailing functions."
+      ></Paragraph>
       <StaticImage
         src="../../material/tt2.jpg"
         alt="tottot"
         className="Portrait"
         placeholder="blurred"
-
       />
-      <Paragraph
-        className={classes.text}
-        value="We shared a lot of the work and were all engaged in most elements of the
-        creation of the web application, though I had the main responsibility
-        regarding the wireframing, hosting and emailing functions."
-      ></Paragraph>
     </div>
   )
 }

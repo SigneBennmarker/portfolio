@@ -13,7 +13,7 @@ const Contact = ({ value }) => {
     <Grid container spacing={0} className={contact.root}>
       <Grid item xs={12} sm={12} md={12} lg={12} className={contact.item}>
         <Heading2 value="Say Hi! ☕️"></Heading2>
-        <Paragraph value="I'm intersted in most things related to design and technology so feel free to message me on LinkedIn or write me an email"></Paragraph>
+        <Paragraph value="I'm always eager to explore topics related to design and technology. Feel free to reach out to me via LinkedIn or email for a chat."></Paragraph>
         <Grid container className={contact.elements}>
           <Grid item xs={1} sm={2}></Grid>
           <Grid item xs={5} sm={4} className={contact.element}>

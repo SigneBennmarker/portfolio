@@ -31,7 +31,7 @@ export default function WorkGrid() {
           <Link to="/soundtracker" className={classes.link}>
             <Case
               heading="Soundtracker app"
-              subheading="UX Design & App development"
+              subheading="UX Design & Web development"
               picture={{ backgroundImage: `url(${Tenet})` }}
               text="A web app that uses TMDB and Spotify APIs to find movies and display matching playlists."
             ></Case>
@@ -53,14 +53,13 @@ export default function WorkGrid() {
           <Link to="/larsviner" className={classes.link}>
             <Case
               heading="Vinsida"
-              subheading="UX Design & Webb development"
+              subheading="UX Design & Web development"
               picture={{ backgroundImage: `url(${LarsViner})` }}
               text="A website containing all there is to know about the wines of Italy."
             ></Case>
           </Link>
         </Grid>
-
       </Grid>
-    </div >
+    </div>
   )
 }

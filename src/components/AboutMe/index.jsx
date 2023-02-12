@@ -50,18 +50,13 @@ export default function AboutMe() {
           width={705}
         />
       </Grid>
-      <Grid item xs={0} sm={1}></Grid>
+      <Grid item xs={false} sm={1}></Grid>
       <Grid item xs={12} sm={4} className={about.text}>
         <Heading1 value="Hi, my name is Signe!"></Heading1>
 
-        <Paragraph
-          value="I am a M.Sc.Eng student in interacion and design at Umeå 
-            University and strive to learn more about my big intests, UX design and front end development. 
-            When I’m not busy doing that I 
-               love to watch reality shows, work out or listen to podcasts. "
-        ></Paragraph>
+        <Paragraph value="As a Master of Science in Engineering (M.Sc.Eng) student in Interaction and Design at Umeå University, I am driven to deepen my knowledge of my passions: UX design and front-end development. In my free time, I enjoy exploring my love for climbing, knitting, and listening to podcasts."></Paragraph>
       </Grid>
-      <Grid item xs={0} sm={2}></Grid>
+      <Grid item xs={false} sm={2}></Grid>
     </Grid>
   )
 }
